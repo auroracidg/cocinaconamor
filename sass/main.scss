@@ -1,0 +1,39 @@
+$main-color: #5B77A8;   
+$bg-green: #15d024; 
+$dark-mode: false;  
+
+body {  
+  @if $dark-mode == true {  
+    background: black;  
+  } @else if $dark-mode == false {  
+    background: white;   
+  } @else {  
+    background:white;  
+  }  
+}  
+
+
+.main-nav__text-logo__large, .cotainer-main-title__text__large {
+    font-size: 1.5rem;
+}
+  
+.cotainer-main-title__container {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.container__tags {
+    color: royalblue;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.btn-custom-color{
+    background-color: $main-color;
+    color: white;
+}
+
+.bg-green{
+    background-color: $bg-green;
+}
+
